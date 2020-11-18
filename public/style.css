@@ -1,7 +1,28 @@
 *{
     font-family: "Crimson Text", serif;
 }
-
+header{
+    height: 100px;
+    background-color: rgb(177, 2, 2);
+    margin-bottom: 30px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:  wrap;
+    width: 100%;
+    justify-content: space-around ;
+   
+}
+.charecter{
+    border: solid black;
+    background-color:rgb(177, 2, 2);
+    text-align: center;
+}
+a{
+    color: black;
+    background-color: white;
+}
 /* 
  Color Schema:
     Header, footer and cards backgrounds : #873436;

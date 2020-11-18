@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <a href="/home">Home</a>
+        <a href="/my-characters">my-characters</a>
+    </header>
+    <main>
+
+        <div class="main">
+            <div class="charecter">
+                <form action="/character/<%= result.id%>?_method=PUT" method="POST">
+                    <label> character name</label><br>
+                    <input type="text" name="name" value="<%= result.name%>">
+                    <br>
+                    <label> character patronus</label><br>
+                    <input type="text" name="patronus" value="<%= result.patronus%>">
+                    <br>
+                    <label> character stutes</label><br>
+                    <select id="cars" name="alive">
+                        <option value="alive">alive</option>
+                        <option value="dead">dead</option>
+                    </select>
+                    <br>
+                    <button type="submit">UPDATE CHARACTERS</button>
+                </form>
+
+                <form action="/character/<%= result.id%>?_method=DELETE" method="POST">
+
+                    <button type="submit">DELETE</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
